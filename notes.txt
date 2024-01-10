@@ -1,0 +1,11 @@
+cores:
+https://www.realtimecolors.com/?colors=042023-f2fafb-27c7e9-7f7af1-8f48ec&fonts=Poppins-Poppins
+
+
+configurações:
+procurar no vite e/ou typescript como fazer atalhos para importações
+
+decidir qual estilizador usar
+
+
+colocar um favicon

@@ -1,0 +1,33 @@
+:root {
+  --text: rgb(4, 32, 35);
+  --background: rgb(242, 250, 251);
+  --primary: rgb(39, 199, 233);
+  --secondary: rgb(127, 122, 241);
+  --accent: rgb(143, 72, 236);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+@media (max-width: 800px) {
+  * {
+    font-size: 7px;
+  }
+}
+
+.width {
+  max-width: 1140px;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: var(--background);
+}
