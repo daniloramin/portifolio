@@ -16,7 +16,7 @@
   font-size: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   * {
     font-size: 7px;
   }

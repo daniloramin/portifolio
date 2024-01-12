@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header<{ $isShow: boolean }>`
+export const StyledHeader = styled.header`
+  --mobile-sidebar-right-padding: 3rem;
   position: fixed;
   top: 0;
   width: 100%;
 
   nav {
     padding: 2rem 0;
-
-    @media (max-width: 900px) {
-      display: ${(props) => (props.$isShow ? "block" : "none")};
-    }
 
     menu {
       list-style: none;
@@ -49,6 +46,98 @@ export const StyledHeader = styled.header<{ $isShow: boolean }>`
             scale: 1 1;
             transform-origin: left;
           }
+        }
+      }
+    }
+  }
+
+  button {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    nav {
+      --height: 60rem;
+      translate: 100%;
+
+      position: fixed;
+      right: 0;
+      top: 0;
+      max-width: 300px;
+      width: 100%;
+      background-color: var(--primary);
+      box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.4);
+      height: 20px;
+      overflow: hidden;
+
+      &[data-open="true"] {
+        translate: 0%;
+        transition: translate 0.3s, height 0.3s 0.3s;
+        height: var(--height);
+
+        & + button span {
+          rotate: 45deg;
+          transition: 0.4s;
+
+          &::before {
+            rotate: 90deg;
+            transform: translateX(25%);
+          }
+
+          &::after {
+            scale: 0;
+          }
+        }
+      }
+
+      menu {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4rem;
+        padding: 6rem var(--mobile-sidebar-right-padding);
+
+        a {
+          font-size: 3.6rem;
+        }
+      }
+    }
+
+    button {
+      display: block;
+      position: fixed;
+      z-index: 2;
+      right: var(--mobile-sidebar-right-padding);
+      top: 2rem;
+      width: 3rem;
+      aspect-ratio: 1;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      span {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 0.3rem;
+        background-color: var(--text);
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          height: inherit;
+          background-color: inherit;
+          transition: 0.4s;
+        }
+
+        &::before {
+          top: -6px;
+        }
+
+        &::after {
+          bottom: -6px;
         }
       }
     }

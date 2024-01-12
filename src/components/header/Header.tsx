@@ -5,8 +5,8 @@ export const Header = () => {
   const [isShow, setIsShow] = useState<boolean>(false);
 
   return (
-    <StyledHeader $isShow={isShow}>
-      <nav className="width">
+    <StyledHeader>
+      <nav className="width" data-open={isShow}>
         <menu>
           <li>
             <a href="">Home</a>
@@ -30,7 +30,7 @@ export const Header = () => {
       </nav>
 
       <button id="sidebar-toggler" tabIndex={0} onClick={() => setIsShow((state) => !state)}>
-        <span>click</span>
+        <span></span>
       </button>
     </StyledHeader>
   );
