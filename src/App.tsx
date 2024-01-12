@@ -1,11 +1,11 @@
 import "./App.css";
-import { Header } from "@components/header";
+
+import { Home } from "@components/home";
 
 function App() {
   return (
     <>
-      <Header />
-      <h1>portifolio</h1>
+      <Home></Home>
     </>
   );
 }
