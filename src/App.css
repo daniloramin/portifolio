@@ -14,6 +14,13 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
+  font-family: Roboto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Quicksand;
 }
 
 @media (max-width: 900px) {
@@ -26,6 +33,7 @@
   max-width: 1140px;
   width: 100%;
   margin: auto;
+  padding: 40px 16px;
 }
 
 img {
