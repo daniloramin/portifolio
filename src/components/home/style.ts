@@ -51,4 +51,28 @@ export const StyledHome = styled.section`
       }
     }
   }
+
+  a.more {
+    animation: down 4s linear infinite;
+
+    padding: 5px;
+    color: var(--background);
+
+    background-color: transparent;
+    border: 2px solid transparent;
+
+    svg {
+      font-size: 36px;
+    }
+  }
+
+  @keyframes down {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+  }
 `;

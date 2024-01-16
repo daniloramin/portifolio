@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   --mobile-sidebar-right-padding: 3rem;
   position: fixed;
+  z-index: 100;
   top: 0;
   width: 100%;
 

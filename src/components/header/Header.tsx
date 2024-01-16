@@ -9,22 +9,22 @@ export const Header = () => {
       <nav className="width" data-open={isShow}>
         <menu>
           <li>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="#about">Sobre</a>
           </li>
           <li>
-            <a href="">Projetos</a>
+            <a href="#projects">Projetos</a>
           </li>
           <li>
-            <a href="">Habilidades</a>
+            <a href="#skills">Habilidades</a>
           </li>
           <li>
-            <a href="">Curriculo</a>
+            <a href="#experiences">Curriculo</a>
           </li>
           <li>
-            <a href="">Contato</a>
+            <a href="#contact">Contato</a>
           </li>
         </menu>
       </nav>

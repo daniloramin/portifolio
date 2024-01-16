@@ -3,9 +3,11 @@ import { StyledBackgroundHighlight } from "../styled/styled";
 
 import { Header } from "@components/header";
 
+import { BsChevronDoubleDown } from "react-icons/bs";
+
 export const Home = () => {
   return (
-    <StyledHome>
+    <StyledHome id="home">
       <Header />
 
       <div className="container width">
@@ -13,7 +15,10 @@ export const Home = () => {
           <h1>
             Olá, sou o
             <br />
-            <StyledBackgroundHighlight>Danilo Ramin</StyledBackgroundHighlight>,
+            <StyledBackgroundHighlight $background="var(--accent)">
+              Danilo Ramin
+            </StyledBackgroundHighlight>
+            ,
             <br />
             Desenvolvedor Web Full Stack
           </h1>
@@ -23,6 +28,10 @@ export const Home = () => {
           <img src="https://placehold.co/300x450" alt="Imagem de Danilo Ramin" />
         </div>
       </div>
+
+      <a href="#about" className="more">
+        <BsChevronDoubleDown />
+      </a>
     </StyledHome>
   );
 };
