@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { StyledHeader } from "./style";
 
 export const Header = () => {
   const [isShow, setIsShow] = useState<boolean>(false);
+  const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      if (ref.current) ref.current.classList.toggle("scrolled", window.scrollY > 0);
+    };
+  }, []);
 
   return (
-    <StyledHeader>
+    <StyledHeader ref={ref}>
       <nav className="width" data-open={isShow}>
         <menu>
           <li>

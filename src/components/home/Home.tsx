@@ -4,6 +4,7 @@ import { StyledBackgroundHighlight } from "../styled/styled";
 import { Header } from "@components/header";
 
 import { BsChevronDoubleDown } from "react-icons/bs";
+import picture from "@/assets/picture.jfif";
 
 export const Home = () => {
   return (
@@ -15,7 +16,7 @@ export const Home = () => {
           <h1>
             Olá, sou o
             <br />
-            <StyledBackgroundHighlight $background="var(--accent)">
+            <StyledBackgroundHighlight $background="var(--accent)" $color="white">
               Danilo Ramin
             </StyledBackgroundHighlight>
             ,
@@ -25,7 +26,7 @@ export const Home = () => {
         </div>
 
         <div className="right">
-          <img src="https://placehold.co/300x450" alt="Imagem de Danilo Ramin" />
+          <img src={picture} alt="Imagem de Danilo Ramin" />
         </div>
       </div>
 

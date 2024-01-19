@@ -8,4 +8,9 @@ colocar um favicon
 
 clicar fora da sidebar e fechar ela
 
-animações de carregamento com o scroll utilizando Intersection Observer
+animações de carregamento com o scroll utilizando Intersection Observer - https://blog.webdevsimplified.com/2022-01/intersection-observer/
+
+colocar transparencia no header depois que ele sair do scroll
+
+adicionar animação de hover nos cards que fala sobre mim, onde eles estão rotacionados e ficam no posição normal com o hover. 
+talvez adicionar essa animação com intersection observer para o mobile.

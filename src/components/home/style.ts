@@ -20,6 +20,7 @@ export const StyledHome = styled.section`
     .left {
       h1 {
         font-size: 48px;
+        font-weight: 400;
       }
     }
 
@@ -29,9 +30,8 @@ export const StyledHome = styled.section`
       border-radius: 10px;
 
       img {
-        max-width: 300px;
-        aspect-ratio: 1/1.5;
-        border-radius: inherit;
+        max-width: 400px;
+        border-radius: 50%;
         box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
       }
     }
