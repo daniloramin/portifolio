@@ -3,8 +3,16 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   --mobile-sidebar-right-padding: 3rem;
   position: fixed;
+  z-index: 100;
   top: 0;
-  width: 100%;
+  width: 100vw;
+  width: 100dvw;
+
+  &.scrolled {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background-image: linear-gradient(to right, rgba(39, 199, 233, 0.6), rgba(127, 122, 241, 0.6));
+  }
 
   nav {
     padding: 2rem 0;
@@ -60,7 +68,7 @@ export const StyledHeader = styled.header`
       --height: 60rem;
       translate: 100%;
 
-      position: fixed;
+      position: absolute;
       right: 0;
       top: 0;
       max-width: 300px;
@@ -104,7 +112,7 @@ export const StyledHeader = styled.header`
 
     button {
       display: block;
-      position: fixed;
+      position: absolute;
       z-index: 2;
       right: var(--mobile-sidebar-right-padding);
       top: 2rem;
