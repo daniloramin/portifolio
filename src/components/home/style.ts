@@ -28,11 +28,14 @@ export const StyledHome = styled.section`
       position: relative;
       z-index: 1;
       border-radius: 10px;
+      perspective: 100vw;
 
       img {
         max-width: 400px;
         border-radius: 50%;
         box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+        animation: flip 1s ease-out;
+        backface-visibility: hidden;
       }
     }
 
@@ -73,6 +76,16 @@ export const StyledHome = styled.section`
     }
     50% {
       transform: translateY(20px);
+    }
+  }
+
+  @keyframes flip {
+    from {
+      transform: rotateY(-180deg);
+      filter: blur(10px);
+    } to {
+      transform: rotateY(0deg);
+      filter: blur(0px);
     }
   }
 `;

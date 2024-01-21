@@ -23,7 +23,7 @@ export const StyledSectionTitle = styled.h2<StyledSectionTitleProps>`
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 4px;
+    height: 2px;
     background-color: currentColor;
     z-index: -1;
   }
