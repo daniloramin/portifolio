@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const StyledProjects = styled.section`
   min-height: 100vh;
   min-height: 100dvh;
-
-  border: 1px solid blue;
 `;
 
-export const StyledProjectBox = styled.div`
-  border: 1px solid red;
+type StyledProjectBoxProps = {
+  $secondaryElement?: boolean;
+};
 
+export const StyledProjectBox = styled.div<StyledProjectBoxProps>`
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -19,16 +19,10 @@ export const StyledProjectBox = styled.div`
     flex: 1;
   }
 
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-
-    .right {
-      text-align: start;
-    }
-  }
+  flex-direction: ${(props) => (props.$secondaryElement ? "row-reverse" : "row")};
 
   .right {
-    text-align: end;
+    text-align: ${(props) => (props.$secondaryElement ? "start" : "end")};
     padding: 2rem;
 
     h3 {

@@ -21,7 +21,7 @@ export const About = () => {
           </StyledInfoBox>
         </IntersectionComponent> */}
 
-        <IntersectionComponent $animationSide="left">
+        <IntersectionComponent type="slide" $animationSide="left">
           <StyledInfoBox>
             <h3>Formação e carreira</h3>
             <p>
@@ -33,7 +33,7 @@ export const About = () => {
           </StyledInfoBox>
         </IntersectionComponent>
 
-        <IntersectionComponent $animationSide="right">
+        <IntersectionComponent type="slide" $animationSide="right">
           <StyledInfoBox $secondary>
             <h3>Resultados</h3>
             <p>
@@ -47,7 +47,7 @@ export const About = () => {
           </StyledInfoBox>
         </IntersectionComponent>
 
-        <IntersectionComponent $animationSide="left">
+        <IntersectionComponent type="slide" $animationSide="left">
           <StyledInfoBox>
             <h3>Responsabilidades</h3>
             <p>
@@ -59,7 +59,7 @@ export const About = () => {
           </StyledInfoBox>
         </IntersectionComponent>
 
-        <IntersectionComponent $animationSide="right">
+        <IntersectionComponent type="slide" $animationSide="right">
           <StyledInfoBox $secondary>
             <h3>Evolução e aprendizado</h3>
             <p>
