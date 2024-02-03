@@ -1,15 +1,22 @@
 import { useEffect, useRef } from "react";
-import { StyledIntersectionElement } from "./style";
-import { StyledIntersectionElementProps } from "./style";
+import {
+  StyledIntersectionReveal,
+  StyledIntersectionRevealProps,
+  StyledIntersectionSlide,
+} from "./style";
+import { StyledIntersectionSlideProps } from "./style";
 
 type IntersectionComponentProps = {
   children: React.ReactNode;
+  type: "slide" | "reveal";
 };
 
 export const IntersectionComponent = ({
   children,
+  type,
   $animationSide,
-}: IntersectionComponentProps & StyledIntersectionElementProps) => {
+  $color,
+}: IntersectionComponentProps & StyledIntersectionSlideProps & StyledIntersectionRevealProps) => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -36,8 +43,17 @@ export const IntersectionComponent = ({
   }, []);
 
   return (
-    <StyledIntersectionElement $animationSide={$animationSide} ref={ref}>
-      {children}
-    </StyledIntersectionElement>
+    <>
+      {type == "slide" && (
+        <StyledIntersectionSlide $animationSide={$animationSide} ref={ref}>
+          {children}
+        </StyledIntersectionSlide>
+      )}
+      {type == "reveal" && (
+        <StyledIntersectionReveal $color={$color} $animationSide={$animationSide} ref={ref}>
+          {children}
+        </StyledIntersectionReveal>
+      )}
+    </>
   );
 };

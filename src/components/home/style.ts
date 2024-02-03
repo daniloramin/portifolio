@@ -83,7 +83,8 @@ export const StyledHome = styled.section`
     from {
       transform: rotateY(-180deg);
       filter: blur(10px);
-    } to {
+    }
+    to {
       transform: rotateY(0deg);
       filter: blur(0px);
     }
