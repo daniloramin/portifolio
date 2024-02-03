@@ -19,6 +19,7 @@ export const Projects = () => {
               <StyledTechnologyBadge src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
               <StyledTechnologyBadge src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
               <StyledTechnologyBadge src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
+              <StyledTechnologyBadge src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
             </div>
 
             <p>
