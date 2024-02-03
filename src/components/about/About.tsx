@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-
 import { StyledAbout, StyledInfoBox } from "./style";
 
 import { StyledBackgroundHighlight } from "@components/styled/styled";

@@ -7,13 +7,13 @@ export type StyledIntersectionElementProps = {
 export const StyledIntersectionElement = styled.div<StyledIntersectionElementProps>`
   transform: ${(props) =>
     props.$animationSide == "left"
-      ? "translateX(-100%)"
+      ? "translateX(-20%)"
       : props.$animationSide == "right"
-      ? "translateX(100%)"
+      ? "translateX(20%)"
       : props.$animationSide == "top"
-      ? "translateY(-100%)"
+      ? "translateY(-20%)"
       : props.$animationSide == "bottom"
-      ? "translateY(100%)"
+      ? "translateY(20%)"
       : ""};
   filter: blur(5px);
   opacity: 0;
