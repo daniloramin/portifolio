@@ -4,10 +4,10 @@ import { IntersectionComponent } from "../intersectionComponent";
 
 export const Projects = () => {
   return (
-    <div id="projects" className="width">
+    <div id="projects">
       <SectionTitle $color="primary">Projects</SectionTitle>
 
-      <StyledProjects>
+      <StyledProjects className="width">
         <IntersectionComponent type="reveal" $animationSide="left">
           <StyledProjectBox>
             <div className="left">

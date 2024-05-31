@@ -11,8 +11,9 @@ export const StyledHeader = styled.header`
   &.scrolled {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    background-image: linear-gradient(to right, rgba(39, 199, 233, 0.6), rgba(127, 122, 241, 0.6));
+    background-color: var(--dark-gray);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--accent);
   }
 
   nav {

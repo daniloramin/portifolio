@@ -8,9 +8,8 @@ import { IntersectionComponent } from "@components/intersectionComponent/";
 export const About = () => {
   return (
     <StyledAbout id="about">
+      <SectionTitle $color="secondary">Sobre mim</SectionTitle>
       <div className="wrapper width">
-        <SectionTitle $color="secondary">Sobre mim</SectionTitle>
-
         {/* <IntersectionComponent $animationSide="left">
           <StyledInfoBox>
             <h3>Gosto de ser útil</h3>
@@ -27,7 +26,7 @@ export const About = () => {
             <p>
               Sou{" "}
               <StyledBackgroundHighlight>Desenvolvedor Web Full Stack</StyledBackgroundHighlight> e
-              estou no mercado de trabalho a quase 2 anos.Sou também, graduado em{" "}
+              estou no mercado de trabalho a quase 2 anos. Sou também, graduado em{" "}
               <StyledBackgroundHighlight>Ciência da Computação.</StyledBackgroundHighlight>
             </p>
           </StyledInfoBox>

@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --text: rgb(4, 32, 35);
-  --background: rgb(242, 250, 251);
+  /* --text: rgb(4, 32, 35);
+  --background: rgb(242, 250, 251); */
+  --text: rgb(242, 250, 251);
+  --background: rgb(4, 32, 35);
   --primary: rgb(39, 199, 233);
   --secondary: rgb(127, 122, 241);
   --accent: rgb(143, 72, 236);
+  --dark-gray: #222;
 
   scroll-behavior: smooth;
 }

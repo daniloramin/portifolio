@@ -28,7 +28,7 @@ export const Header = () => {
             <a href="#skills">Habilidades</a>
           </li>
           <li>
-            <a href="#experiences">Curriculo</a>
+            <a href="#experiences">Currículo</a>
           </li>
           <li>
             <a href="#contact">Contato</a>
